@@ -20,15 +20,15 @@ main(void)
   dup(0);  // stderr
 
   for(;;){
-    printf(1, "galletitas sponge");
+    printf(1, "galletitas sponge!");
     pid = fork();
     if(pid < 0){
       printf(1, "init: fork failed\n");
       exit();
     }
     if(pid == 0){
-		// 1) cuando cambié ls se quedó en un for infinito	
-		// 2) noexisteprograma falla y vuelve a iniciar
+		// 1) cuando cambié ls se quedó en un for infinito.	
+		// 2) noexisteprograma falla y vuelve a iniciar.
       exec("sh", argv);
       printf(1, "init: exec sh failed\n");
       exit();

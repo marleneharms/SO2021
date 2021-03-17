@@ -29,7 +29,7 @@ main(void)
     if(pid == 0){
 		// 1) cuando cambié ls se quedó en un for infinito	
 		// 2) noexisteprograma falla y vuelve a iniciar
-      exec("noexisteprograma", argv);
+      exec("sh", argv);
       printf(1, "init: exec sh failed\n");
       exit();
     }

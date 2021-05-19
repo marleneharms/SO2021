@@ -5,6 +5,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+// Room 1
+// Linda Nayeli Abundis López
+// Francisco Javier Ramos Velasco
+// Marlene Rodríguez Harms 
+
 int main(int argnum, char **argv){
     char *oldP = argv[1];
     char *newP = argv[2];
